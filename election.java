@@ -1,5 +1,7 @@
 
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class election {
 
@@ -24,6 +26,17 @@ public class election {
         } while (countvote != 0);
         System.out.println("There were a total of " + yes + " votes for yes");
         System.out.println("There were a total of " + no + " votes for no");
+        try {
+            FileWriter writer = new FileWriter("Result.txt", true);
+
+            writer.write("\nThere were a total of " + yes + " votes for yes   \nThere were a total of " + no
+                    + " votes for no");
+            writer.append("\n(Powered by Jefftm)");
+            writer.close();
+        } catch (IOException e) {
+            // AUTO GENERATED CATCH BLOCK
+            e.printStackTrace();
+        }
         leitor.close();
     }
 }
