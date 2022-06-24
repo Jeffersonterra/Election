@@ -8,8 +8,7 @@ public class election {
     public static void main(String args[]) {
         Scanner leitor = new Scanner(System.in);
         int yes, no, countvote;
-        System.out
-                .println("Would you like to keep previus election results? input 1 for yes any other number for no: ");
+        System.out.println("Would you like to keep previus election results? input 1 for yes any other number for no: ");
 
         int keepconst = leitor.nextInt();
         boolean keep = 1 == keepconst;
