@@ -1,8 +1,11 @@
-#System will will count votes for yes or no and close when vote 0 is registered
+#System will will count votes for yes or no and close when vote 0 is registered and write in txt the results
+- System will ask to keep or flush previous results, input 1 to keep input 2 to flush
+- Any other number will not compute and system will ask again for a number between 1 and 2
 - System will print -vote 1 for yes - vote 2 for no -vote 0 to close system 
 - Input the vote desired
 - System will loop back and close when vote 0 is registered
 - System will print the total votes for yes and no
 - If the operation tipe is not in between 1 and 2 will not register vote and print "vote not registered"
 - System will now generate a txt file named result with the result of the election with all the yes and no votes
+- If required to flush system will now flush all previus results from txt file
 - Enjoy!
